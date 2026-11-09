@@ -1,4 +1,8 @@
-# research-track-minded
+# research-craft
+
+_Previously `research-track-minded`, inside `open-concept-lab/ai/`. Moved out and
+renamed on 9 November 2026, because the skills are used by every project and belong
+to none of them._
 
 Two Claude skills for research work. The source lives here; the installed copies are
 symlinks under `~/.claude/skills/`, so **editing this repo updates the skills

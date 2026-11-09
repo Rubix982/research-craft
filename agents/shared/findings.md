@@ -1,4 +1,4 @@
-# Findings — research-track-minded
+# Findings — research-craft
 
 Owned by: **Researcher**. Append-only.
 

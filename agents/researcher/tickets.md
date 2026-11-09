@@ -1,4 +1,4 @@
-# Researcher Tickets — research-track-minded
+# Researcher Tickets — research-craft
 
 ### R-001 · Voice profile from Saif's own corpus
 

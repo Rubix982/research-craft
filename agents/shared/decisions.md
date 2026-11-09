@@ -1,4 +1,4 @@
-# Decisions — research-track-minded
+# Decisions — research-craft
 
 Owned by: **Engineer**. Append-only.
 

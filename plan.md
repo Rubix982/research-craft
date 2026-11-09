@@ -1,4 +1,4 @@
-# Project: research-track-minded
+# Project: research-craft
 
 _Last updated: 2026-09-18 by O-001_
 

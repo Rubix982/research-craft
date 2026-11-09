@@ -1,4 +1,4 @@
-# Threads — research-track-minded
+# Threads — research-craft
 
 ### T-001 · Is flat prose a symptom of an unsharpened claim?
 
