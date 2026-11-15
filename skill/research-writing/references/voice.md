@@ -159,3 +159,26 @@ and must not fire, which it did on the first version of the pattern.
 The opening that replaced it is one line: *"Every number here is in the full
 paper, with the run behind it."* A fact the reader can use, and nothing about how
 well the page is arranged.
+
+### Where this family lives: the furniture
+
+Two instances in one day, and both in the same kind of place. Neither was in the
+argument.
+
+The body of a page has something to carry — a number, a result, a concession — so
+it carries it. **Furniture carries nothing**: labels, standfirsts, captions,
+section endings, the line under a heading. Nothing is asking to be said there, so
+what fills the gap is the document talking about itself, and the easiest thing for
+a document to say about itself is that it is good.
+
+That is a place to look rather than a pattern to match, and it is the useful half
+of this whole section. When prose feels machine-made, do not re-read the
+paragraphs. Read **the label, the caption, the standfirst, and the last sentence
+of each section.** The faults cluster there because that is where there is nothing
+else to say.
+
+Both of the day's instances were also **redundant**, which is the tell worth
+trusting. `said so it can still be checked` sat above a page that keeps every
+number and its own broken control; `Seven sections: …` sat above seven visible
+headings. If a sentence is claiming something the artifact already shows, it is
+not adding the claim — it is admitting a doubt that the artifact had not raised.
