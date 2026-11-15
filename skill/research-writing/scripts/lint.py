@@ -32,9 +32,18 @@ RULES: list[Rule] = [
          "delete the frame; keep the sentence"),
     # Anchored at sentence start and requiring a subject: "in this post" as a
     # mid-sentence cross-reference is legitimate and must not fire.
+    # The third alternative is the document reciting its own contents list:
+    # "Seven sections: what I was trying to do, the point where...". Requires
+    # the colon AND a following list, so "the paper has eight sections and three
+    # appendices" — a fact about the artifact — does not fire. Restricted to
+    # units of the DOCUMENT; "Three steps: fetch, score, report" names the work
+    # and is content, not furniture, so steps and stages are excluded on
+    # purpose after that probe fired on them.
     Rule("section pre-announcement",
          r"(?:^|[.!?]\s+)[Ii]n this (?:section|chapter|post),?\s+(?:we|I)\b"
-         r"|\b[Ww]e begin by\b|\b[Tt]his section (?:will|describes)\b",
+         r"|\b[Ww]e begin by\b|\b[Tt]his section (?:will|describes)\b"
+         r"|\b(?:[Tt]wo|[Tt]hree|[Ff]our|[Ff]ive|[Ss]ix|[Ss]even|[Ee]ight|[Nn]ine|[Tt]en|\d+)"
+         r"\s+(?:sections?|chapters?)\s*:\s*\S+[^.\n]*,",
          "name the commitments, then deliver them in order"),
     # Sentence-initial, not line-initial: wrapped prose puts sentence starts mid-line.
     Rule("additive connective",

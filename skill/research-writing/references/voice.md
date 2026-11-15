@@ -130,3 +130,32 @@ The narrow, lintable case is the rule `self-justifying label`. It is anchored ha
 short name-like left side, virtue-claiming right side — and it fires on zero of the
 corpus and zero of 27k words of this author's own prose. The rest is caught by
 reading, with the two tests above.
+
+### It is not only labels — added the same day, from the next instance
+
+Within an hour of writing the rule above I shipped the same fault in a different
+position, and the rule did not catch it because it was written for labels:
+
+> **The same paper, without the notation, in the order it actually happened.**
+> Seven sections: what I was trying to do, the point where I thought it had
+> worked, …
+
+Same disease. `in the order it actually happened` praises the arrangement;
+`Seven sections: …` recites the contents list of a page the reader is already
+looking at. The headings were right there on the screen below it.
+
+Worth knowing *why* it got written, because the cause recurs: the author had said
+the view felt jumpy with no clear start. The real fault was CSS — the headings
+were rendering as body text, so the sections were invisible. Rather than find
+that, I announced the structure in words. **An announcement of structure is what
+a document writes when its structure cannot be seen.** If you want to add one,
+check first whether the structure is actually missing or just not showing.
+
+The lintable half is now folded into `section pre-announcement`: a count of
+document units, a colon, and a list. Restricted to sections and chapters —
+*"Three steps: fetch, score, report"* names the work rather than the furniture
+and must not fire, which it did on the first version of the pattern.
+
+The opening that replaced it is one line: *"Every number here is in the full
+paper, with the run behind it."* A fact the reader can use, and nothing about how
+well the page is arranged.
