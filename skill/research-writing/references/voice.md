@@ -15,8 +15,11 @@ is the part a list can actually carry.
 
 ## Sentence
 
-1. **Short declaratives carry the load.** The heaviest sentences are the shortest.
-   "No model is consulted at any point in construction."
+1. **Short declaratives carry the load** — *while they stay on one chain.* The
+   heaviest sentences are the shortest: "No model is consulted at any point in
+   construction." But length is not the virtue, and reading this line as "shorter
+   is better" is how a passage gets compressed instead of clarified. See **One
+   chain, and the cost of compression** below, which qualifies this one.
 2. **Long sentences coordinate; they do not subordinate.** Chain clauses with
    em-dash or semicolon. No stack of nested "which" clauses.
 3. **The em-dash marks the turn** — the pivot or the qualification that reverses
@@ -182,3 +185,46 @@ trusting. `said so it can still be checked` sat above a page that keeps every
 number and its own broken control; `Seven sections: …` sat above seven visible
 headings. If a sentence is claiming something the artifact already shows, it is
 not adding the claim — it is admitting a doubt that the artifact had not raised.
+
+## One chain, and the cost of compression
+
+Added 2026-11-15, from the author on an abstract paragraph:
+
+> We assume short snappy jumpy sentences are good for the average person, and
+> they are not. We squash details into one place without realising that writing
+> *more*, but simply, is better for everyone — provided it is organised in a
+> readable order.
+
+He is right, and the rule above had been read the wrong way. Short is good **on
+one chain**. A short sentence that changes the subject is not clearer than a long
+one that stays put: the reader now has to join the pieces, and joining is harder
+than following.
+
+**The failure mode is compression, and it looks like concision.** Distinct ideas
+get squashed into adjacent units — a semicolon chain, a colon, a parenthetical
+hedge inside the claim — and the result scores well on every sentence-level
+measure while being unreadable as a passage. The sentence that prompted this:
+
+> A single edit does two things, breaking the old answer and supplying the new
+> one, and the two come apart: on one probe set under one metric they move in
+> opposite directions.
+
+Three ideas and a hedge in one sentence: an edit has two parts, the parts can be
+told apart, and here is the scope limit. Each is fine. Together they are a knot.
+
+**An abstract carries one chain of thought, and nothing else.** Each answer raises
+the next question. A list of results is not a chain, even when every item on it is
+true and well written — and "four further results came off the same probe set" is
+the sentence that admits you are about to write a list.
+
+Worked instance, measured. The abstract that prompted this had its findings in
+the order they were run: screen fails, contamination survives, then four more
+results in a heap. Re-ordered so each answer asks the next question — *can it
+screen? no. then how much was there to predict? almost nothing. then can anything
+bound it? one ceiling, and it is empty. then is it a property of the subject? no.
+so what survives? the contamination screen* — with the one unrelated finding named
+as unrelated and put last.
+
+It went from **266 words to 461**. That is the point rather than the cost: the
+compressed version was shorter and could not be followed, and no sentence in it
+was badly written.
