@@ -77,3 +77,56 @@ semantic, not a rate:** use it where the two halves are genuinely
 > their emergence at an early site … is a new discovery."
 
 — and it will not overfire. Used for mere emphasis, it degrades into mannerism.
+
+## The sentence no one would say
+
+Added 2026-11-15, from one label that got published:
+
+> PLAIN — the same paper, said so it can still be checked
+
+The author could not name the fault and called it **inhumane**: *"no human writes
+like this, or thinks like this. I would never see myself writing such sentences."*
+He was right, and nothing caught it. The word-level lint scored the containing file
+at **0.0 per 10k** and the vocabulary census at **zero defects**, both before and
+after that sentence existed.
+
+**What it is.** The label does two jobs at once: it names the thing, and it defends
+the thing's existence. `said so it can still be checked` answers an objection nobody
+raised — *is this the dumbed-down version?* — in the position where a name belongs.
+The writer has stopped addressing the reader and started winning an argument with an
+imagined objector.
+
+**Why it is worse than clumsy.** The clause asserts a virtue the artifact already
+demonstrates. That page keeps every number, keeps its limits, and keeps the control
+it got wrong. Telling a reader the work can be checked is weaker than letting them
+check it, so the label **subtracts from what the page had already earned**. Self-praise
+in the furniture reads as doubt about the furniture.
+
+### Two tests
+
+**Say it aloud, to a person, about your own work.** "This is the plain version, said
+so it can still be checked." Nobody says that. If you would not say it, do not label
+with it. This is the author's own test and it is the one that generalises — most of
+this family is not a pattern, so no regex will find it.
+
+**Delete the justifying clause. Does the label still name the thing?** If yes, the
+clause was argument rather than name, and it goes. `PLAIN` on its own, or `In plain
+words`, names it.
+
+### The line it sits on
+
+Not every em-dash apposition is this. The sibling label on the same component —
+`THREADS — how this paper was reached` — is fine, and the difference is the whole
+rule:
+
+| | |
+| --- | --- |
+| `THREADS — how this paper was reached` | says what is **in** it |
+| `PLAIN — the same paper, said so it can still be checked` | says why it is **good** |
+
+Describe the contents and you are naming. Assert the merit and you are arguing.
+
+The narrow, lintable case is the rule `self-justifying label`. It is anchored hard —
+short name-like left side, virtue-claiming right side — and it fires on zero of the
+corpus and zero of 27k words of this author's own prose. The rest is caught by
+reading, with the two tests above.

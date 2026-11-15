@@ -403,3 +403,80 @@ The pass that fixed those pages is not `research-writing`'s. It is a different d
 **One finding came out of building it rather than out of using it.** The first run of the census reported `M300`, `H820`, `V252` as identifiers — SVG path commands. Requiring a separator in the pattern and skipping the innards of a figure fixed it, and the docstring now records why the separator is mandatory, because the obvious loosening reintroduces the bug.
 
 **What this ticket did not foresee:** that the coinage class would be irreducibly noisy. Emphasis and a term of art are typographically identical, so the script cannot separate them. It now labels that class as noisy in its own output rather than pretending to a precision it does not have.
+
+---
+
+### E-009 · Catch the label that argues for itself
+
+**Status:** closed
+**Type:** implement
+**Priority:** medium
+**Created:** 2026-11-15
+**Updated:** 2026-11-15
+
+**Description:**
+A tab label written on 2026-11-15 read:
+
+> PLAIN — the same paper, said so it can still be checked
+
+Saif could not name the fault and described it as *inhumane*: "no human writes
+like this, or thinks like this. I would never see myself writing such
+sentences." He is right, and neither existing pass catches it. The word-level
+lint scored the containing file at **0.0 per 10k** and the vocabulary census at
+**zero defects**, both before and after this sentence was written.
+
+**What the fault is.** The label is doing two jobs at once: naming the thing, and
+defending its existence. `said so it can still be checked` answers an objection
+nobody raised — *is this the dumbed-down version?* — in the position where a name
+belongs. The writer is not addressing the reader; they are winning an argument
+with an imagined objector.
+
+**And it is self-defeating, which is the part worth writing down.** The clause
+asserts a virtue the artifact already demonstrates. The page keeps every number,
+keeps its limits, and keeps the control it got wrong. Telling a reader the work
+can be checked is weaker evidence than letting them check it, so the label
+subtracts from what the page had already earned.
+
+**Scope:**
+
+1. A lint rule, anchored narrowly enough not to fire on a legitimate em-dash
+   apposition. The signature is a short naming phrase, an em-dash or colon, and
+   a clause asserting the artifact's own epistemic virtue.
+2. A section in `references/voice.md` with the two tests, since most of this
+   family is not lintable and has to be caught by reading.
+3. One line in `research-writing/SKILL.md` pointing at it from Pass 2, where
+   hedging and criticism already live.
+
+**Measured before the fix:** one instance in the published site
+(`open-concept-lab`, `src/components/LabLog.tsx:88`). A sibling label on the same
+component — `THREADS — how this paper was reached` — is **not** an instance, and
+the difference is the whole rule: that one describes what the tab contains, it
+does not praise it.
+
+**Blockers:** none
+
+**RCA:** —
+
+**Artifacts:**
+
+- `skill/research-writing/scripts/lint.py` → rule `self-justifying label`
+- `skill/research-writing/references/voice.md` → "The sentence no one would say",
+  with the two tests and the line between describing and praising
+- `skill/research-writing/SKILL.md` → Pass 2 question 7, Self-defence; the pass
+  is now eight questions and the count is corrected where it was stated
+
+**False positives:** zero on `corpus/papers/`, zero on 27k words of the author's
+own published prose. The rule is anchored on a short name-like left side and a
+virtue-claiming right side, so an ordinary em-dash apposition does not fire —
+checked against the sibling label `THREADS — how this paper was reached`, which
+describes its contents and correctly passes.
+
+**The instance that produced it** is fixed in the other repo: the label is now
+`In plain words`, three words, naming the tab and nothing else.
+
+**What this ticket is really a record of:** the lint and the census both scored
+that file clean while the sentence was in it, so the fix had to be a new rule
+rather than a stricter one. A pass that cannot see a defect does not get better
+by being run again.
+
+**Closed:** 2026-11-15

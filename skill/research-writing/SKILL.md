@@ -97,7 +97,7 @@ source was already written to that standard — while the ranking changed the st
 every time. **Expect the ranking, not the filter.** An audit that catches nothing has
 not failed; read the table for what outranks what.
 
-## Pass 2 — seven structural questions
+## Pass 2 — eight structural questions
 
 In order. Worked examples: `references/structure.md`. **Questions 2 and 3 are the ones
 that have actually fired** in three live uses — 2 twice, 3 once — so spend attention
@@ -118,7 +118,13 @@ there first. Three uses is not a ranking; it is where to look.
    named Limits section and the body runs unhedged. Same epistemic content,
    concentrated, and more honest: a specific limit gets named instead of a vague
    adverb.
-7. **Criticism** — is the scope fixed before the damage? "X was built to do A, and it
+7. **Self-defence** — does any label, heading or caption argue for the thing it
+   names instead of naming it? *"PLAIN — the same paper, said so it can still be
+   checked"* answers an objection nobody raised, in the position where a name
+   belongs, and asserts a virtue the page already demonstrates. Say it aloud to a
+   person about your own work; if you would not, cut the clause and keep the
+   name. `references/voice.md`.
+8. **Criticism** — is the scope fixed before the damage? "X was built to do A, and it
    does. B is a different question. The problem is downstream."
 
 ### Every draft gets a limits section, whatever it is called
@@ -183,7 +189,7 @@ choose what to build next. A project-level design protocol owns those.
 
 ## References
 
-- `references/structure.md` — the seven questions, with before/after examples
+- `references/structure.md` — the eight questions, with before/after examples
 - `references/mathematics.md` — words before symbols; the free-inference test for names
 - `references/exemplars.md` — marked passages, and one worked anti-exemplar
 - `references/voice.md` — **only when drafting from nothing.** Extending a document?

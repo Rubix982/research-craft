@@ -55,6 +55,20 @@ RULES: list[Rule] = [
     Rule("assertive evidentiary verb",
          r"\b(underscore[sd]?|showcase[sd]?|demonstrat(es|ing) the importance)\b|\bhighlights the\b",
          "say what the result licenses, and what it does not"),
+    # A label that argues for itself: a short naming phrase, an em-dash or
+    # colon, then a clause asserting the thing's own epistemic virtue. Anchored
+    # hard, because an em-dash apposition is ordinary and must not fire:
+    # the left side has to be short and name-like (no sentence punctuation,
+    # at most five words), and the right side has to claim a virtue OF THE
+    # ARTIFACT. "THREADS - how this paper was reached" describes and passes;
+    # "PLAIN - the same paper, said so it can still be checked" praises and
+    # does not.
+    Rule("self-justifying label",
+         r"(?:^|\n)\s*[^.!?\n]{2,40}?\s[—–:]\s[^.\n]{0,60}?"
+         r"\b(?:said so|written so|kept so|so (?:it|they) can still|"
+         r"so a reader can|because it can be|which is what makes it|"
+         r"and it is (?:honest|checkable|falsifiable))\b",
+         "name the thing; let the artifact show the virtue"),
     Rule("reaction adverb",
          r"\b(Interestingly|Surprisingly|Notably|Remarkably|Importantly)\b",
          "delete, or say to whom it was surprising and why"),
