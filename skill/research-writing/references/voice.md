@@ -228,3 +228,36 @@ as unrelated and put last.
 It went from **266 words to 461**. That is the point rather than the cost: the
 compressed version was shorter and could not be followed, and no sentence in it
 was badly written.
+
+## Do not end on a placeholder
+
+Added 2026-11-15, from the author, on a sentence written an hour earlier:
+
+> "and the ceiling is empty where it would matter" — the next thought any person
+> thinks is *well, what matters?* Why end so dramatically? Why take time to hide
+> and get to the point?
+
+The sentence holds its own content back by one sentence to make a beat. *Where it
+would matter* names nothing; the naming is in the sentence after it. So the
+reader's next thought is a question, and the question was manufactured by the
+writer rather than raised by the material.
+
+It is the same family as the self-justifying label one section up, turned around.
+That one puts an argument where a name belongs; this one puts a placeholder where
+the content belongs. Both are the furniture of a sentence doing work the sentence
+should have done.
+
+**The fix is a merge, not a rewrite.** The next sentence almost always holds the
+missing noun — move it in.
+
+| | |
+| --- | --- |
+| before | The same algebra gives one universal ceiling, and the ceiling is empty where it would matter. Its median value for a question that never names the edited subject sits above what a question that does name it receives, so it cannot tell those two apart. |
+| after | The same algebra gives one universal ceiling. For a question that never names the edited subject, its median value sits above what a question that does name it actually receives, so the ceiling cannot tell those two questions apart and forbids nothing. |
+
+The second is one word shorter and asks the reader nothing.
+
+**The tell is a demonstrative with no referent in its own sentence** — *that gap*,
+*where it matters*, *this is the point*. Three instances were found across a paper
+and its plain version by searching for sentence-final ones; the lint rule
+`withheld point` catches the common shapes, and the rest is the same ear.

@@ -78,6 +78,17 @@ RULES: list[Rule] = [
          r"so a reader can|because it can be|which is what makes it|"
          r"and it is (?:honest|checkable|falsifiable))\b",
          "name the thing; let the artifact show the virtue"),
+    # A sentence that ends on a placeholder instead of on the thing: "empty where
+    # it would matter", "and that gap is the result". The point is held back one
+    # sentence to make a beat, and the reader's next thought is a question the
+    # writer manufactured. Sentence-final only, so "it matters because X" in the
+    # middle of a clause does not fire.
+    Rule("withheld point",
+         r"\b(?:where it (?:would )?matters?"
+         r"|(?:and|so) that (?:\w+ )?is the (?:result|point|finding|whole point)"
+         r"|which is the whole (?:point|problem)"
+         r"|is what matters)\s*[.!?]",
+         "say what it is, in this sentence"),
     Rule("reaction adverb",
          r"\b(Interestingly|Surprisingly|Notably|Remarkably|Importantly)\b",
          "delete, or say to whom it was surprising and why"),
